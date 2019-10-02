@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Tambah Produk</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <ion-text>Nama Barang :</ion-text>
+    <ion-list>
+  <ion-item>
+    <ion-input placeholder="Masukan nama barang" type="text"></ion-input>
+  </ion-item>
+    </ion-list>
+    <ion-text>Deskripsi Barang :</ion-text>
+    <ion-list>
+  <ion-textarea maxlength="500" [(ngModel)]="myText"></ion-textarea>
+    </ion-list>
+  <ion-text>Distributor :</ion-text>
+    <ion-list>
+  <ul class="list">
+      <li class="item item-checkbox">
+         Garansi
+         <label class="checkbox">
+         <input type="checkbox">
+         </label>
+      </li>
+      
+      <li class="item item-checkbox">
+         Non garansi
+         <label class="checkbox">
+         <input type="checkbox" checked="Checked">
+         </label>
+      </li>
+      </ul>
+      </ion-list>
+      <ion-text>Tanggal input :</ion-text>
+      <ion-list>
+      <ion-item>
+          <ion-input placeholder="" type="date"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-text>Jumlah :</ion-text>
+      <ion-list>
+      <ion-item>
+          <ion-input placeholder="Masukan jumlah barang" type="integer"></ion-input>
+        </ion-item>
+      </ion-list>
+        <ion-text>Satuan :</ion-text>
+        <ion-list>
+        <label class="item item-radio">
+            <input type="radio" name="group" value="Kg" checked="checked">
+            <div class="radio-content">
+              <div class="item-content">
+                Kg
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </div>
+   </label>
+   <label class="item item-radio">
+            <input type="radio" name="group" value="Pcs" >
+            <div class="radio-content">
+              <div class="item-content">
+                Pcs
+              </div>
+              <i class="radio-icon ion-checkmark"></i>
+            </div>
+   </label>
+   <label class="item item-radio">
+      <input type="radio" name="group" value="Koli" >
+      <div class="radio-content">
+        <div class="item-content">
+          Koli
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </div>
+</label>
+</ion-list>
+<ion-list>
+<label class="item item-input item-select">
+    <div class="input-label">
+      Kategori :
+    </div>
+    <select>
+      <option>Software</option>
+      <option>Hardware</option>
+    </select>
+  </label>
+</ion-list>
+
+<ion-button expand="full">SIMPAN</ion-button>
+</ion-content>
